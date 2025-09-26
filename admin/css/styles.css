@@ -3,8 +3,23 @@
 }
 
 #login-form {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: fit-content;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#login-form table {
+    border: 1px solid black;
+    width: 300px;
+    border-collapse: separate;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+#login-form td,
+#login-form th {
+    padding-bottom: 10px;
 }
