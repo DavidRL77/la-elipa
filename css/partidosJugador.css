@@ -1,39 +1,100 @@
 @import url("colores.css");
+footer {
+  background-color: #51cb82;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  width: 100%;
+  font-size: 12px;
+}
+/* Estilos para el enlace de Inicio */
+.btn-inicio {
+  display: inline-block;
+  padding: 6px 10px;
+  margin-right: 15px;
+  margin-left: 15px;
 
+  background-color: #2bb775;
+  color: black;
+  border: none;
+  border-radius: 4px;
 
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+}
 
+.header-ranking a {
+  color: inherit;
+  text-decoration: none;
+}
 
-/* Barra superior */
+/* Barra superior (antes header) */
 header {
-  background-color: mediumseagreen;
+  background-color: #51cb82;
+  padding: 5px 10px;
+}
+
+.contenedor-header {
+  display: flex;
+  justify-content: flex-end;
+  font-family: "Times New Roman", Times, serif;
+}
+
+header h1 {
+  font-size: 10px;
+  margin: 0;
+}
+
+header p {
+  font-size: 12px;
+  margin: 0;
+}
+
+.barra-superior {
+  background-color: #2bb775;
   display: flex;
   align-items: center;
-  padding-right: 10px;
-  justify-content: space-between;
+  padding: 0 20px;
+  position: relative;
 }
-header img {
-  height: 90px;
+
+.barra-superior img {
+  height: 120px;
   margin-right: 10px;
 }
+
 .header-ranking {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   text-align: center;
   font-size: 15px;
   font-family: "Arial Black", Arial, sans-serif;
 }
+
 .header-contacto {
   text-align: left;
   font-size: 7px;
+  font-family: "Times New Roman", Times, serif;
   margin-right: 10px;
   margin-left: auto;
 }
+
 .header-telefono {
   text-align: right;
   font-size: 7px;
+  font-family: "Times New Roman", Times, serif;
 }
+
 body {
-  margin: 0;
-  padding: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 0px;
+  font-family: Arial, sans-serif;
   background-color: var(--bg-principal);
   color: var(--color-texto);
 }
