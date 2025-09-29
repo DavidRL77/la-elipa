@@ -69,6 +69,33 @@ header p {
     text-align: right;
     font-size: 7px;
 }
+/* Barra de Navegador */
+.barra-navegacion {
+    background-color: #51cb82;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.barra-navegacion a {
+    color: black;          /* color normal armonioso */
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.barra-navegacion a:hover {
+    color: seagreen;         /* color al pasar el ratón */
+}
+
+/* Evitar cambio de color al hacer clic o cuando ya se ha visitado */
+.barra-navegacion a:visited,
+.barra-navegacion a:active,
+.barra-navegacion a:focus {
+    color: #2a8f5a;
+}
+
 
 /* ==== FORMULARIO ==== */
 form {

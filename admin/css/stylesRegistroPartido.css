@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
 footer {
     background-color: #51cb82;
     text-align: center;
@@ -67,6 +68,34 @@ header p {
     font-size: 7px;
 }
 
+/* Barra de navegador */
+.barra-navegacion {
+    background-color: #51cb82;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.barra-navegacion a {
+    color: black;          /* color normal armonioso */
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.barra-navegacion a:hover {
+    color: seagreen;         /* color al pasar el ratón */
+}
+
+/* Evitar cambio de color al hacer clic o cuando ya se ha visitado */
+.barra-navegacion a:visited,
+.barra-navegacion a:active,
+.barra-navegacion a:focus {
+    color: #2a8f5a;
+}
+
+
 /* ==== FORMULARIO ==== */
 form {
     max-width: 500px;
@@ -107,6 +136,7 @@ textarea {
     border-radius: 6px;
     font-size: 13px;
 }
+
 textarea {
     resize: none;
     height: 80px;
