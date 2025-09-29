@@ -24,6 +24,7 @@ header {
 .contenedor-header {
     display: flex;
     justify-content: flex-end;
+    
 }
 
 header h1 {
@@ -36,17 +37,17 @@ header p {
     margin: 0;
 }
 
-
+/* Barra superior con logo y título */
 .barra-superior {
     background-color: #2bb775;
     display: flex;
     align-items: center;
-    padding: 0 20px;
+    padding: 5px 20px; /* altura reducida para simplificar */
     position: relative;
 }
 
 .barra-superior img {
-    height: 120px;
+    height: 60px; /* tamaño más pequeño */
     margin-right: 10px;
 }
 
@@ -55,21 +56,22 @@ header p {
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
-    font-size: 15px;
+    font-size: 15px; /* igual que antes */
     font-family: 'Arial Black', Arial, sans-serif;
 }
 
 .header-contacto {
-    text-align: left;
+    margin-left: auto;
+    text-align: right;
     font-size: 7px;
     margin-right: 10px;
-    margin-left: auto;
 }
 
 .header-telefono {
     text-align: right;
     font-size: 7px;
 }
+
 
 /* Contenido principal */
 main {
@@ -91,10 +93,10 @@ table {
   max-width: 1000px;
   margin: 50px auto;
   background-color: white;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12); /* sombra más elegante */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
   border-radius: 12px;
   overflow: hidden;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* fuente original */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 thead th {
@@ -110,7 +112,7 @@ thead th {
 th, td {
   border-bottom: 1px solid var(--color-lineas);
   padding: 14px;
-  text-align: center; /* contenido centrado */
+  text-align: center;
 }
 
 td {
@@ -119,11 +121,11 @@ td {
 }
 
 tr:nth-child(even) td {
-  background-color: #f9f9f9; /* filas alternadas */
+  background-color: #f9f9f9;
 }
 
 tr:hover td {
-  background-color: #e6f5ec; /* efecto hover */
+  background-color: #e6f5ec;
   transition: 0.3s;
 }
 

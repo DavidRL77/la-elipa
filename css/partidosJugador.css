@@ -1,38 +1,50 @@
 @import url("colores.css");
-
-
-
-
-/* Barra superior */
-header {
-  background-color: mediumseagreen;
-  display: flex;
-  align-items: center;
-  padding-right: 10px;
-  justify-content: space-between;
+/* --- CONTENEDOR DE IDIOMA (ES) --- */
+.contenedor-header {
+    background-color: var(--secundario);
+    display: flex;
+    justify-content: flex-end;
+    padding: 3px 10px;
 }
 
-header img {
-  height: 90px;
-  margin-right: 10px;
+.contenedor-header p {
+    margin: 0;
+    font-size: 10px;
+}
+
+/* --- BARRA SUPERIOR --- */
+.barra-superior {
+    background-color: #2bb775;
+    display: flex;
+    align-items: center;
+    padding: 5px 15px;
+    position: relative;
+}
+
+.barra-superior img {
+    height: 80px;
+    margin-right: 10px;
 }
 
 .header-ranking {
-  text-align: center;
-  font-size: 15px;
-  font-family: "Arial Black", Arial, sans-serif;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Arial Black', Arial, sans-serif;
 }
 
 .header-contacto {
-  text-align: left;
-  font-size: 7px;
-  margin-right: 10px;
-  margin-left: auto;
+    margin-left: auto;
+    text-align: right;
+    font-size: 8px;
+    margin-right: 10px;
 }
 
 .header-telefono {
-  text-align: right;
-  font-size: 7px;
+    text-align: right;
+    font-size: 8px;
 }
 
 body {
