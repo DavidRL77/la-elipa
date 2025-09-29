@@ -2,22 +2,54 @@ body {
     margin: 0;
     padding: 0;
 }
-
-/* Barra superior */
-header {
-    background-color: mediumseagreen;
-    display: flex;
-    align-items: center;
-    padding-right: 10px;
-    justify-content: space-between;
+footer {
+    background-color: #51cb82;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    font-size: 12px;
 }
 
-header img {
-    height: 90px;
+/* Barra superior (antes header) */
+header {
+    background-color: #51cb82;
+    padding: 5px 10px;
+}
+
+.contenedor-header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+header h1 {
+    font-size: 10px;
+    margin: 0;
+}
+
+header p {
+    font-size: 12px;
+    margin: 0;
+}
+
+
+.barra-superior {
+    background-color: #2bb775;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    position: relative;
+}
+
+.barra-superior img {
+    height: 120px;
     margin-right: 10px;
 }
 
 .header-ranking {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     text-align: center;
     font-size: 15px;
     font-family: 'Arial Black', Arial, sans-serif;
@@ -35,11 +67,6 @@ header img {
     font-size: 7px;
 }
 
-/* Contenido principal */
-main {
-    padding: 20px;
-}
-
 /* ==== FORMULARIO ==== */
 form {
     max-width: 500px;
@@ -49,13 +76,15 @@ form {
     border-radius: 10px;
     border: 2px solid mediumseagreen;
     font-family: Arial, sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 form h2 {
     text-align: center;
     margin-bottom: 20px;
     color: mediumseagreen;
-    font-size: 18px;
+    font-size: 25px;
 }
 
 table {
@@ -84,13 +113,14 @@ textarea {
 }
 
 .contador {
+    width: 103%;
     text-align: right;
     font-size: 11px;
     color: gray;
 }
 
 button {
-    width: 105%;
+    width: 104%;
     background: mediumseagreen;
     color: white;
     padding: 10px;
