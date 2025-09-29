@@ -1,128 +1,122 @@
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #51cb82;
-}
 
-/* Barra superior (antes header) */
+
+
+
+
+/* Barra superior */
 header {
-    background-color: #51cb82;
-    padding: 5px 10px;
+  background-color: mediumseagreen;
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+  justify-content: space-between;
 }
 
-.contenedor-header {
-    display: flex;
-    justify-content: flex-end   ;
+header img {
+  height: 90px;
+  margin-right: 10px;
 }
-
-header h1 {
-    font-size: 10px;
-    margin: 0;
-}
-
-header p {
-    font-size: 12px;
-    margin: 0;
-}
-
-
-.barra-superior {
-    background-color: #2bb775;
-    display: flex;
-    align-items: center;
-    padding: 0 20px;
-    position: relative;
-}
-
-.barra-superior img {
-    height: 120px;
-    margin-right: 10px;
-}
-
 .header-ranking {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    font-size: 18px;
-    font-family: 'Arial Black', Arial, sans-serif;
+  text-align: center;
+  font-size: 15px;
+  font-family: "Arial Black", Arial, sans-serif;
 }
 
 .header-contacto {
-    text-align: left;
-    font-size: 7px;
-    margin-right: 10px;
-    margin-left: auto;
+  text-align: left;
+  font-size: 7px;
+  margin-right: 10px;
+  margin-left: auto;
 }
 
 .header-telefono {
-    text-align: right;
-    font-size: 7px;
+  text-align: right;
+  font-size: 7px;
 }
 
-/* Contenido principal */
-main {
-    padding: 20px;
-}
-main h2 {
-    text-align: center;
-    font-size: 25px;
-    font-family: 'Arial Black', Arial, sans-serif;
-    margin-bottom: 20px;
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-principal);
+  color: var(--color-texto);
 }
 
-/* Tabla de rankings */
+h2 {
+  color: var(--color-acento);
+  text-align: center;
+  font-size: 2.2em;
+  margin-bottom: 40px;
+  border-bottom: 2px solid var(--color-lineas);
+  padding-bottom: 15px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* FICHA DEL JUGADOR*/
+
+.player-card {
+  width: 90%;
+  max-width: 400px;
+  margin: 40px auto;
+  text-align: left;
+}
+
+.player-header {
+  color: var(--color-acento);
+  font-size: 1.8em;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 8px 0;
+  border-bottom: 1px dashed var(--color-lineas);
+  font-size: 1.1em;
+}
+
+.label {
+  font-weight: 500;
+  color: var(--color-acento);
+  margin-right: 20px;
+}
+
+.value {
+  color: var(--color-texto);
+  font-weight: 400;
+  text-align: right;
+}
+
+/* TABLA DE PARTIDOS*/
 table {
-    width: 100%;
-    border-collapse: collapse;
+  border-collapse: collapse;
+  width: 90%;
+  max-width: 1000px;
+  margin: 50px auto;
+  background-color: white;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
 }
 
-.contenedor-main{
-    border: 2px solid;
-    border-radius: 20px;
-    background-color: #f4d35f;
-    padding: 20px;
-    margin: 10px;
+thead th {
+  background-color: var(--color-acento);
+  color: white;
+  font-weight: 600;
+  padding: 16px;
+  text-align: center;
+  letter-spacing: 0.5px;
 }
 
-table,
 th,
 td {
-    border: 1px;
-}
-
-th,
-td {
-    padding: 10px;
-    text-align: center;
-}
-
-th {
-    background-color: black;
-    color: white;
-}
-
-tr:nth-child(even) {
-    background-color: #d7edb7;
-}
-
-tr:nth-child(odd) {
-    background-color: #93c6ad;
-}
-
-
-.fila-link {
-    color: black;
-    text-decoration: none;
-    display: block;
-    padding: 5px 0;
-}
-
-
-tr:nth-child(odd) .fila-link:hover {
-    background-color: #d7edb7;
-}
-
-tr:nth-child(even) .fila-link:hover {
-    background-color: #93c6ad;
+  border-bottom: 1px solid var(--color-lineas);
+  border-right: none;
+  border-left: none;
+  padding: 14px;
 }

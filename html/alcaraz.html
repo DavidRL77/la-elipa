@@ -4,33 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Partidos Jugador</title>
-     <link rel="stylesheet" href="/css/partidosJugador.css">
+    <link rel="stylesheet" href="../css/partidosJugador.css"> 
 </head>
 <body>
+    
+    <header>
+        <img src="/img/logo.png" alt="Logo">
+        <div class="header-ranking">
+            <h1>Ranking De La Elipa</h1>
+        </div>
+        <div class="header-contacto">
+            <h1>Contacto:</h1>
+        </div>
+        <div class="header-telefono">
+            <h1>612345789</h1>
+        </div>
+    </header>
+
+
     <h2>Información del Jugador</h2>
-    <table>
-        <caption>Alcaraz #1</caption>
-        <thead>
-            <tr>
-                
-                <th>Teléfono</th>
-                <th>Partidos</th>
-                <th>Puntos</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                
-                <td>612345678</td>
-                <td>25</td>
-                <td>3200</td>
-            </tr>
-        </tbody>
-    </table>
 
-    <br>
-
-    <table>
+    <div class="player-card">
+        <div class="player-header">
+            <h3>Alcaraz #1</h3>
+        </div>
+        <div class="player-details">
+            <div class="detail-item">
+                <span class="label">Teléfono:</span>
+                <span class="value">612345678</span>
+            </div>
+            <div class="detail-item">
+                <span class="label">Partidos:</span>
+                <span class="value">25</span>
+            </div>
+            <div class="detail-item">
+                <span class="label">Puntos:</span>
+                <span class="value">3200</span>
+            </div>
+        </div>
+    </div>
+    <br> <table>
         <thead>
             <tr>
                 <th>Ganador</th>
