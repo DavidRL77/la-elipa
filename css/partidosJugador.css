@@ -1,10 +1,9 @@
-:root {
-  --bg-principal: #f0f2f5;
-  --color-texto: #000000;
-  --color-acento: #148b52;
-  --color-acento-claro: #ddebf7;
-  --color-lineas: #e0e0e0;
-} /* Barra superior */
+@import url("colores.css");
+
+
+
+
+/* Barra superior */
 header {
   background-color: mediumseagreen;
   display: flex;
@@ -32,6 +31,8 @@ header img {
   font-size: 7px;
 }
 body {
+  margin: 0;
+  padding: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: var(--bg-principal);
   color: var(--color-texto);
