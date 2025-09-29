@@ -1,9 +1,10 @@
-
-
-
-
-
-/* Barra superior */
+:root {
+  --bg-principal: #f0f2f5;
+  --color-texto: #000000;
+  --color-acento: #148b52;
+  --color-acento-claro: #ddebf7;
+  --color-lineas: #e0e0e0;
+} /* Barra superior */
 header {
   background-color: mediumseagreen;
   display: flex;
@@ -11,7 +12,6 @@ header {
   padding-right: 10px;
   justify-content: space-between;
 }
-
 header img {
   height: 90px;
   margin-right: 10px;
@@ -21,27 +21,21 @@ header img {
   font-size: 15px;
   font-family: "Arial Black", Arial, sans-serif;
 }
-
 .header-contacto {
   text-align: left;
   font-size: 7px;
   margin-right: 10px;
   margin-left: auto;
 }
-
 .header-telefono {
   text-align: right;
   font-size: 7px;
 }
-
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  margin: 0;
-  padding: 0;
   background-color: var(--bg-principal);
   color: var(--color-texto);
 }
-
 h2 {
   color: var(--color-acento);
   text-align: center;
@@ -52,17 +46,13 @@ h2 {
   width: fit-content;
   margin-left: auto;
   margin-right: auto;
-}
-
-/* FICHA DEL JUGADOR*/
-
+} /* --- ESTILOS FICHA DEL JUGADOR --- */
 .player-card {
   width: 90%;
   max-width: 400px;
   margin: 40px auto;
   text-align: left;
 }
-
 .player-header {
   color: var(--color-acento);
   font-size: 1.8em;
@@ -70,7 +60,6 @@ h2 {
   margin-bottom: 20px;
   text-align: left;
 }
-
 .detail-item {
   display: flex;
   justify-content: space-between;
@@ -79,20 +68,16 @@ h2 {
   border-bottom: 1px dashed var(--color-lineas);
   font-size: 1.1em;
 }
-
 .label {
   font-weight: 500;
   color: var(--color-acento);
   margin-right: 20px;
 }
-
 .value {
   color: var(--color-texto);
   font-weight: 400;
   text-align: right;
-}
-
-/* TABLA DE PARTIDOS*/
+} /* --- ESTILOS PARA LA TABLA DE PARTIDOS --- */
 table {
   border-collapse: collapse;
   width: 90%;
@@ -103,7 +88,6 @@ table {
   border-radius: 12px;
   overflow: hidden;
 }
-
 thead th {
   background-color: var(--color-acento);
   color: white;
@@ -112,7 +96,6 @@ thead th {
   text-align: center;
   letter-spacing: 0.5px;
 }
-
 th,
 td {
   border-bottom: 1px solid var(--color-lineas);
