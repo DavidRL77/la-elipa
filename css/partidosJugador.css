@@ -62,11 +62,13 @@ header p {
   text-align: right;
   font-size: 7px;
   margin-right: 10px;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .header-telefono {
   text-align: right;
   font-size: 7px;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 body {
