@@ -1,91 +1,101 @@
 @import url("colores.css");
 footer {
-  background-color: #51cb82;
-  text-align: center;
-  padding: 10px 0;
-  position: relative;
-  width: 100%;
-  font-size: 12px;
+    background-color: #51cb82;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    font-size: 12px;
 }
 /* Estilos para el enlace de Inicio */
 .btn-inicio {
-  display: inline-block;
-  padding: 6px 10px;
-  margin-right: 15px;
-  margin-left: 15px;
 
-  background-color: #2bb775;
-  color: black;
-  border: none;
-  border-radius: 4px;
-
-  text-decoration: none;
-  font-size: 14px;
-  font-family: "Times New Roman", Times, serif;
-  font-weight: bold;
+    display: inline-block;
+    padding: 6px 10px;
+    margin-right: 15px;
+    margin-left: 15px;
+    
+    /* Colores y bordes */
+    background-color: #2bb775; /* Un verde fuerte, similar a la barra superior */
+    color: white; /* Texto blanco */
+    border: none;
+    border-radius: 4px; /* Ligeramente redondeado */
+    
+    /* Tipografía */
+    text-decoration: none; /* Quitar el subrayado del enlace */
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif; /* Usar la misma fuente del contenedor-header */
+    font-weight: bold;
+    
+    /* Transición suave para el efecto hover */
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    cursor: pointer;
 }
+
 
 .header-ranking a {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;      
+    text-decoration: none; 
 }
+
 
 /* Barra superior (antes header) */
 header {
-  background-color: #51cb82;
-  padding: 5px 10px;
+    background-color: #51cb82;
+    padding: 5px 10px;
 }
 
 .contenedor-header {
-  display: flex;
-  justify-content: flex-end;
-  font-family: "Times New Roman", Times, serif;
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 header h1 {
-  font-size: 10px;
-  margin: 0;
+    font-size: 10px;
+    margin: 0;
 }
 
 header p {
-  font-size: 12px;
-  margin: 0;
+    font-size: 12px;
+    margin: 0;
 }
 
+
 .barra-superior {
-  background-color: #2bb775;
-  display: flex;
-  align-items: center;
-  padding: 0 20px;
-  position: relative;
+    background-color: #2bb775;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    position: relative;
 }
 
 .barra-superior img {
-  height: 120px;
-  margin-right: 10px;
+    height: 120px;
+    margin-right: 10px;
 }
 
 .header-ranking {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  font-size: 15px;
-  font-family: "Arial Black", Arial, sans-serif;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Arial Black', Arial, sans-serif;
 }
 
 .header-contacto {
-  text-align: left;
-  font-size: 7px;
-  font-family: "Times New Roman", Times, serif;
-  margin-right: 10px;
-  margin-left: auto;
+    text-align: left;
+    font-size: 7px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-right: 10px;
+    margin-left: auto;
 }
 
 .header-telefono {
-  text-align: right;
-  font-size: 7px;
-  font-family: "Times New Roman", Times, serif;
+    text-align: right;
+    font-size: 7px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 body {
@@ -94,11 +104,10 @@ body {
   margin-left: 0px;
   margin-right: 0px;
   padding: 0px;
-  font-family: Arial, sans-serif;
+  font-family:  Arial, sans-serif;
   background-color: var(--bg-principal);
   color: var(--color-texto);
 }
-
 h2 {
   color: var(--color-acento);
   text-align: center;
@@ -109,16 +118,14 @@ h2 {
   width: fit-content;
   margin-left: auto;
   margin-right: auto;
-}
-
-/* --- ESTILOS FICHA DEL JUGADOR --- */
+  
+} /* --- ESTILOS FICHA DEL JUGADOR --- */
 .player-card {
   width: 90%;
   max-width: 400px;
   margin: 40px auto;
   text-align: left;
 }
-
 .player-header {
   color: var(--color-acento);
   font-size: 1.8em;
@@ -126,7 +133,6 @@ h2 {
   margin-bottom: 20px;
   text-align: left;
 }
-
 .detail-item {
   display: flex;
   justify-content: space-between;
@@ -135,20 +141,16 @@ h2 {
   border-bottom: 1px dashed var(--color-lineas);
   font-size: 1.1em;
 }
-
 .label {
   font-weight: 500;
   color: var(--color-acento);
   margin-right: 20px;
 }
-
 .value {
   color: var(--color-texto);
   font-weight: 400;
   text-align: right;
-}
-
-/* --- ESTILOS PARA LA TABLA DE PARTIDOS --- */
+} /* --- ESTILOS PARA LA TABLA DE PARTIDOS --- */
 table {
   border-collapse: collapse;
   width: 90%;
@@ -159,7 +161,6 @@ table {
   border-radius: 12px;
   overflow: hidden;
 }
-
 thead th {
   background-color: var(--color-acento);
   color: white;
@@ -168,7 +169,6 @@ thead th {
   text-align: center;
   letter-spacing: 0.5px;
 }
-
 th,
 td {
   border-bottom: 1px solid var(--color-lineas);
