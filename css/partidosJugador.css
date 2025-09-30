@@ -14,22 +14,18 @@ footer {
     padding: 6px 10px;
     margin-right: 15px;
     margin-left: 15px;
-    
-    /* Colores y bordes */
-    background-color: #2bb775; /* Un verde fuerte, similar a la barra superior */
-    color: white; /* Texto blanco */
+
+    background-color: #2bb775; 
+    color: black;
     border: none;
-    border-radius: 4px; /* Ligeramente redondeado */
+    border-radius: 4px; 
     
-    /* Tipografía */
-    text-decoration: none; /* Quitar el subrayado del enlace */
+    
+    text-decoration: none; 
     font-size: 14px;
-    font-family: 'Times New Roman', Times, serif; /* Usar la misma fuente del contenedor-header */
+    font-family: 'Times New Roman', Times, serif; 
     font-weight: bold;
     
-    /* Transición suave para el efecto hover */
-    transition: background-color 0.3s ease, transform 0.1s ease;
-    cursor: pointer;
 }
 
 
@@ -37,6 +33,7 @@ footer {
     color: inherit;      
     text-decoration: none; 
 }
+
 
 
 /* Barra superior (antes header) */
@@ -48,7 +45,7 @@ header {
 .contenedor-header {
     display: flex;
     justify-content: flex-end;
-    font-family: 'Times New Roman', Times, serif;
+    
 }
 
 header h1 {
@@ -61,17 +58,17 @@ header p {
     margin: 0;
 }
 
-
+/* Barra superior con logo y título */
 .barra-superior {
     background-color: #2bb775;
     display: flex;
     align-items: center;
-    padding: 0 20px;
+    padding: 5px 20px; /* altura reducida para simplificar */
     position: relative;
 }
 
 .barra-superior img {
-    height: 120px;
+    height: 60px; /* tamaño más pequeño */
     margin-right: 10px;
 }
 
@@ -80,22 +77,20 @@ header p {
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
-    font-size: 30px;
+    font-size: 15px; /* igual que antes */
     font-family: 'Arial Black', Arial, sans-serif;
 }
 
 .header-contacto {
-    text-align: left;
-    font-size: 7px;
-    font-family: 'Times New Roman', Times, serif;
-    margin-right: 10px;
     margin-left: auto;
+    text-align: right;
+    font-size: 7px;
+    margin-right: 10px;
 }
 
 .header-telefono {
     text-align: right;
     font-size: 7px;
-    font-family: 'Times New Roman', Times, serif;
 }
 
 body {
