@@ -3,8 +3,9 @@
 body {
     margin: 0;
     padding: 0;
-    
+
 }
+
 footer {
     background-color: #51cb82;
     text-align: center;
@@ -13,6 +14,7 @@ footer {
     width: 100%;
     font-size: 12px;
 }
+
 /* Barra superior (antes header) */
 header {
     background-color: #51cb82;
@@ -22,6 +24,7 @@ header {
 .contenedor-header {
     display: flex;
     justify-content: flex-end;
+    
 }
 
 header h1 {
@@ -34,17 +37,17 @@ header p {
     margin: 0;
 }
 
-
+/* Barra superior con logo y título */
 .barra-superior {
     background-color: #2bb775;
     display: flex;
     align-items: center;
-    padding: 0 20px;
+    padding: 5px 20px; /* altura reducida para simplificar */
     position: relative;
 }
 
 .barra-superior img {
-    height: 120px;
+    height: 60px; /* tamaño más pequeño */
     margin-right: 10px;
 }
 
@@ -53,15 +56,15 @@ header p {
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
-    font-size: 15px;
+    font-size: 15px; /* igual que antes */
     font-family: 'Arial Black', Arial, sans-serif;
 }
 
 .header-contacto {
-    text-align: left;
+    margin-left: auto;
+    text-align: right;
     font-size: 7px;
     margin-right: 10px;
-    margin-left: auto;
 }
 
 .header-telefono {
@@ -69,65 +72,78 @@ header p {
     font-size: 7px;
 }
 
+
 /* Contenido principal */
 main {
     padding: 20px;
+    text-align: center;
 }
-.contenedor-main {
-    border: 2px solid;
-    border-radius: 20px;
-    background-color: #f4d35f;
-    padding: 20px;
-    margin: 20px auto;
-    width: 800px;
-    max-width: 90%;
-}
-
 
 main h2 {
-    text-align: center;
     font-size: 25px;
     font-family: 'Arial Black', Arial, sans-serif;
     margin-bottom: 20px;
 }
 
-/* Tabla de rankings */
+/* --- ESTILOS MODERNOS PARA LA TABLA DE RANKING --- */
+/* --- ESTILOS TABLA RANKING MEJORADA --- */
 table {
-    width: 100%;
-    border-collapse: collapse;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    overflow: hidden;
-    margin: 30px 0;
+  border-collapse: collapse;
+  width: 90%;
+  max-width: 1000px;
+  margin: 50px auto;
+  background-color: white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
+  overflow: hidden;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-th {
-    background-color: #f0f0f0; /* Encabezado gris claro */
-    font-weight: bold;
-    padding: 12px;
-    text-align: left;
+thead th {
+  background-color: var(--color-acento);
+  color: white;
+  font-weight: 700;
+  padding: 16px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+th, td {
+  border-bottom: 1px solid var(--color-lineas);
+  padding: 14px;
+  text-align: center;
 }
 
 td {
-    padding: 10px;
-    background-color: white;
+  color: var(--color-texto);
+  font-weight: 500;
 }
 
 tr:nth-child(even) td {
-    background-color: #f9f9f9;
+  background-color: #f9f9f9;
 }
 
 tr:hover td {
-    background-color: #e6f5ec;
+  background-color: #e6f5ec;
+  transition: 0.3s;
 }
 
 .fila-link {
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
 }
 
 .fila-link:hover {
-    color: #2bb775;
-    text-decoration: underline;
+  color: #2bb775;
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
+/* Opcional: resaltar la columna Ranking */
+td:first-child {
+  font-weight: 700;
+  font-size: 1.1em;
+  color: var(--color-acento);
 }

@@ -1,46 +1,69 @@
+/* === ESTILOS GENERALES === */
 body {
     margin: 0;
     padding: 0;
-}
-
-/* Barra superior */
-header {
-    background-color: mediumseagreen;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    padding-right: 10px;
-    justify-content: space-between;
 }
 
-header img {
-    height: 90px;
-    margin-right: 10px;
-}
-
-.header-ranking {
+/* Título principal */
+.titulo-principal {
+    font-size: 36px;
+    color: mediumseagreen;
     text-align: center;
-    font-size: 15px;
-    font-family: 'Arial Black', Arial, sans-serif;
+    margin-top: 60px;
 }
 
+/* FORMULARIO */
 #login-form {
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    width: 100%;
+    margin: 40px 0;
 }
 
 #login-form table {
-    border: 1px solid black;
+    border: 1px solid #2bb775;
     width: 300px;
     border-collapse: separate;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1.1em;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    background-color: #fff;
 }
 
-#login-form td,
 #login-form th {
-    padding-bottom: 10px;
+    font-size: 1.3em;
+    padding-bottom: 15px;
+    color: mediumseagreen;
+}
+
+#login-form td {
+    padding: 10px 0;
+}
+
+#login-form input[type="password"],
+#login-form input[type="submit"] {
+    width: 90%;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid gray;
+    font-size: 14px;
+}
+
+#login-form input[type="submit"] {
+    background-color: mediumseagreen;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#login-form input[type="submit"]:hover {
+    background-color: seagreen;
 }
