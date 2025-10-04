@@ -2,7 +2,8 @@
 body {
     margin: 0;
     padding: 0;
-     display: flex;
+    min-height: 100vh;
+    display: flex;
     flex-direction: column;
 }
 
@@ -10,9 +11,8 @@ footer {
     background-color: #51cb82;
     text-align: center;
     padding: 10px 0;
-    position: relative;
-    width: 100%;
     font-size: 12px;
+    width: 100%;
 }
 
 /* Barra superior (antes header) */
@@ -69,6 +69,7 @@ header p {
     text-align: right;
     font-size: 7px;
 }
+
 /* Barra de Navegador */
 .barra-navegacion {
     background-color: #51cb82;
@@ -89,30 +90,32 @@ header p {
     color: seagreen;         /* color al pasar el ratón */
 }
 
-/* Evitar cambio de color al hacer clic o cuando ya se ha visitado */
-.barra-navegacion a:visited,
-.barra-navegacion a:active,
-.barra-navegacion a:focus {
-    color: #2a8f5a;
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding: 20px;
 }
-
 
 /* ==== FORMULARIO ==== */
 form {
-    max-width: 400px;
+    width: 90%;
+    max-width: 600px;
     margin: 40px auto;
     background: #f9f9f9;
-    padding: 25px;
-    border-radius: 10px;
+    padding: 30px 35px;
+    border-radius: 12px;
     border: 2px solid mediumseagreen;
     font-family: Arial, sans-serif;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* le da un poco de relieve */
 }
 
 form h2 {
     text-align: center;
     color: mediumseagreen;
-    margin-bottom: 20px;
-    font-size: 24px;
+    margin-bottom: 25px;
+    font-size: 26px;
 }
 
 .campo {
@@ -128,18 +131,18 @@ form h2 {
 }
 
 .campo input {
-    padding: 8px;
+    padding: 10px;
     border: 1px solid gray;
     border-radius: 6px;
-    font-size: 13px;
+    font-size: 15px;
 }
-
+    
 button {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     background: mediumseagreen;
     color: white;
-    font-size: 15px;
+    font-size: 16px;
     border: none;
     border-radius: 6px;
     cursor: pointer;

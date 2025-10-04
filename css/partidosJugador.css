@@ -1,4 +1,12 @@
 @import url("colores.css");
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding: 20px;
+}
+
 footer {
   background-color: #51cb82;
   text-align: center;
@@ -35,16 +43,17 @@ header p {
 }
 
 /* Barra superior con logo y título */
+
 .barra-superior {
   background-color: #2bb775;
   display: flex;
   align-items: center;
-  padding: 5px 20px; /* altura reducida para simplificar */
+  padding: 0 20px;
   position: relative;
 }
 
 .barra-superior img {
-  height: 60px; /* tamaño más pequeño */
+  height: 120px;
   margin-right: 10px;
 }
 
@@ -53,22 +62,20 @@ header p {
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
-  font-size: 15px; /* igual que antes */
-  font-family: "Arial Black", Arial, sans-serif;
+  font-size: 15px;
+  font-family: 'Arial Black', Arial, sans-serif;
 }
 
 .header-contacto {
-  margin-left: auto;
-  text-align: right;
+  text-align: left;
   font-size: 7px;
   margin-right: 10px;
-  font-family: 'Times New Roman', Times, serif;
+  margin-left: auto;
 }
 
 .header-telefono {
   text-align: right;
   font-size: 7px;
-  font-family: 'Times New Roman', Times, serif;
 }
 
 body {
@@ -147,4 +154,28 @@ td {
   border-right: none;
   border-left: none;
   padding: 14px;
+}
+.boton-volver-container {
+  width: 90%;
+  max-width: 400px; 
+  margin: 30px auto;
+}
+
+.btn-volver {
+  display: block;
+  width: 95%;
+  padding: 12px;
+  background: mediumseagreen;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-volver:hover {
+  background: seagreen;
 }

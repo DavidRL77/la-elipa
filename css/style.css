@@ -38,38 +38,39 @@ header p {
 }
 
 /* Barra superior con logo y título */
+
 .barra-superior {
-    background-color: #2bb775;
-    display: flex;
-    align-items: center;
-    padding: 5px 20px; /* altura reducida para simplificar */
-    position: relative;
+  background-color: #2bb775;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  position: relative;
 }
 
 .barra-superior img {
-    height: 60px; /* tamaño más pequeño */
-    margin-right: 10px;
+  height: 120px;
+  margin-right: 10px;
 }
 
 .header-ranking {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    font-size: 15px; /* igual que antes */
-    font-family: 'Arial Black', Arial, sans-serif;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 15px;
+  font-family: 'Arial Black', Arial, sans-serif;
 }
 
 .header-contacto {
-    margin-left: auto;
-    text-align: right;
-    font-size: 7px;
-    margin-right: 10px;
+  text-align: left;
+  font-size: 7px;
+  margin-right: 10px;
+  margin-left: auto;
 }
 
 .header-telefono {
-    text-align: right;
-    font-size: 7px;
+  text-align: right;
+  font-size: 7px;
 }
 
 

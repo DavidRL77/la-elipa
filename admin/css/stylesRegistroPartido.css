@@ -68,7 +68,7 @@ header p {
     font-size: 7px;
 }
 
-/* Barra de navegador */
+/* Barra de Navegador */
 .barra-navegacion {
     background-color: #51cb82;
     text-align: center;
@@ -88,13 +88,6 @@ header p {
     color: seagreen;         /* color al pasar el ratón */
 }
 
-/* Evitar cambio de color al hacer clic o cuando ya se ha visitado */
-.barra-navegacion a:visited,
-.barra-navegacion a:active,
-.barra-navegacion a:focus {
-    color: #2a8f5a;
-}
-
 
 /* ==== FORMULARIO ==== */
 form {
@@ -107,13 +100,14 @@ form {
     font-family: Arial, sans-serif;
     margin-top: 20px;
     margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 form h2 {
     text-align: center;
-    margin-bottom: 20px;
     color: mediumseagreen;
-    font-size: 25px;
+    margin-bottom: 25px;
+    font-size: 26px;
 }
 
 table {
