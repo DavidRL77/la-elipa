@@ -145,6 +145,7 @@ table {
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
   overflow: hidden;
+  text-align: center;
 }
 thead th {
   background-color: var(--color-acento);
