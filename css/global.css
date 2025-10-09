@@ -1,0 +1,75 @@
+
+footer {
+    background-color: #51cb82;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    font-size: 12px;
+}
+
+/* Barra superior (antes header) */
+header {
+    background-color: #51cb82;
+    padding: 5px 10px;
+
+}
+
+.contenedor-header {
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'Times New Roman', Times, serif;
+   
+}
+
+header h1 {
+    font-size: 10px;
+    margin: 0;
+}
+
+header p {
+    font-size: 12px;
+    margin: 0;
+}
+
+/* Barra superior con logo y título */
+
+.barra-superior {
+  background-color: #2bb775;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  position: relative;
+  border-bottom: 2px #38905b solid;
+  border-top: 2px rgb(54, 154, 94) solid;
+  height: 100px;
+}
+
+.barra-superior img {
+  width: 100px;
+  margin-right: 10px;
+  float: left;
+}
+
+.header-ranking {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 15px;
+  font-family: 'Arial Black', Arial, sans-serif;
+}
+
+.header-contacto {
+  text-align: left;
+  font-size: 7px;
+  margin-right: 10px;
+  margin-left: auto;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.header-telefono {
+  text-align: right;
+  font-size: 7px;
+  font-family: 'Times New Roman', Times, serif;
+}

@@ -1,4 +1,6 @@
 @import url("colores.css");
+@import url("global.css");
+
 main {
     flex: 1;
     display: flex;
@@ -7,14 +9,6 @@ main {
     padding: 20px;
 }
 
-footer {
-  background-color: #51cb82;
-  text-align: center;
-  padding: 10px 0;
-  position: relative;
-  width: 100%;
-  font-size: 12px;
-}
 
 .header-ranking a {
   color: inherit;
@@ -43,46 +37,6 @@ header p {
   margin: 0;
 }
 
-/* Barra superior con logo y título */
-
-.barra-superior {
-  background-color: #2bb775;
-  display: flex;
-  align-items: center;
-  padding: 0 20px;
-  position: relative;
-}
-
-.barra-superior img {
-  height: 120px;
-  margin-right: 10px;
-}
-
-.header-ranking {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  font-size: 15px;
-  font-family: 'Arial Black', Arial, sans-serif;
-}
-
-.header-contacto {
-  text-align: left;
-  font-size: 7px;
-  margin-right: 10px;
-  margin-left: auto;
-  font-family: 'Times New Roman', Times, serif;
-
-}
-
-.header-telefono {
-  text-align: right;
-  font-size: 7px;
-  font-family: 'Times New Roman', Times, serif;
-
- 
-}
 
 body {
   margin-top: 0px;
