@@ -40,8 +40,9 @@ header p {
   align-items: center;
   padding: 0 20px;
   position: relative;
-  border-bottom: 2px #38905b solid;
-  border-top: 2px rgb(54, 154, 94) solid;
+  border: 2px #38905b solid;
+  border-left: none;
+  border-right: none;
   height: 100px;
 }
 
