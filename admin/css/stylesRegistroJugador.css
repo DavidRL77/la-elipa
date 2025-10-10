@@ -10,13 +10,16 @@ body {
 
 /* Barra de Navegador */
 .barra-navegacion {
+    position: relative;
     background-color: #51cb82;
-    text-align: center;
-    padding: 10px 0;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.barra-navegacion a {
-    color: black;          /* color normal armonioso */
+.barra-navegacion .enlaces-centro a {
+    color: black;
     text-decoration: none;
     font-weight: bold;
     margin: 0 15px;
@@ -24,8 +27,18 @@ body {
     transition: 0.3s;
 }
 
+.barra-navegacion .cerrar-sesion {
+    position: absolute;
+    right: 20px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
 .barra-navegacion a:hover {
-    color: seagreen;         /* color al pasar el ratón */
+    color: seagreen;
 }
 
 main {
