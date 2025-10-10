@@ -1,10 +1,12 @@
 :root {
-  --princial_color: #2bb775;
-  --secundario: #51cb82;
-  --tercero: #d7edb7;
-  --cuarto: #000000;
-  --quinto: #93c6ad;
-  --bg-principal: #f0f2f5;
+  --color1: #2bb775;
+  --color2: #51cb82;
+  --color3: #d7edb7;
+  --color4: #000000;
+  --color5: #93c6ad;
+  --bg: #ffffff;
+  --bg-darker: #f3f3f3;
+  --highlight: #e6f5ec;
   --color-texto: #000000;
   --color-acento: #148b52;
   --color-acento-claro: #ddebf7;

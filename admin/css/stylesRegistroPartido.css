@@ -1,3 +1,4 @@
+@import url("../../css/colores.css");
 @import url("../../css/global.css");
 
 body {
@@ -9,7 +10,7 @@ body {
 /* Barra de Navegador */
 .barra-navegacion {
     position: relative;
-    background-color: #51cb82;
+    background-color: var(--color2);
     height: 50px;
     display: flex;
     align-items: center;
@@ -17,7 +18,7 @@ body {
 }
 
 .barra-navegacion .enlaces-centro a {
-    color: black;
+    color: var(--color-texto);
     text-decoration: none;
     font-weight: bold;
     margin: 0 15px;
@@ -28,7 +29,7 @@ body {
 .barra-navegacion .cerrar-sesion {
     position: absolute;
     right: 20px;
-    color: black;
+    color: var(--color-texto);
     text-decoration: none;
     font-weight: bold;
     font-size: 14px;
@@ -36,7 +37,7 @@ body {
 }
 
 .barra-navegacion a:hover {
-    color: seagreen;
+    color: var(--color-acento);
 }
 
 
@@ -44,10 +45,10 @@ body {
 form {
     max-width: 500px;
     margin: auto;
-    background: #f9f9f9;
+    background: var(--bg-darker);
     padding: 20px;
     border-radius: 10px;
-    border: 2px solid mediumseagreen;
+    border: 2px solid var(--color1);
     font-family: Arial, sans-serif;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -56,7 +57,7 @@ form {
 
 form h2 {
     text-align: center;
-    color: mediumseagreen;
+    color: var(--color1);
     margin-bottom: 25px;
     font-size: 26px;
 }
@@ -96,7 +97,7 @@ textarea {
 
 button {
     width: 104%;
-    background: mediumseagreen;
+    background: var(--color1);
     color: white;
     padding: 10px;
     font-size: 15px;
@@ -107,5 +108,5 @@ button {
 }
 
 button:hover {
-    background: seagreen;
+    background: var(--color-acento);
 }

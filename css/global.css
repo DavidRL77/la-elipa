@@ -1,6 +1,6 @@
 
 footer {
-    background-color: #51cb82;
+    background-color: var(--color2);
     text-align: center;
     padding: 10px 0;
     position: relative;
@@ -10,7 +10,7 @@ footer {
 
 /* Barra superior (antes header) */
 header {
-    background-color: #51cb82;
+    background-color: var(--color2);
     padding: 5px 10px;
 
 }
@@ -35,12 +35,12 @@ header p {
 /* Barra superior con logo y título */
 
 .barra-superior {
-  background-color: #2bb775;
+  background-color: var(--color1);
   display: flex;
   align-items: center;
   padding: 0 20px;
   position: relative;
-  border: 2px #38905b solid;
+  border: 2px var(--color-acento) solid;
   border-left: none;
   border-right: none;
   height: 100px;

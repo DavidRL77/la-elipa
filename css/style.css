@@ -26,7 +26,7 @@ table {
   width: 90%;
   max-width: 1000px;
   margin: 50px auto;
-  background-color: white;
+  background-color: var(--bg);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
   border-radius: 12px;
   overflow: hidden;
@@ -35,7 +35,7 @@ table {
 
 thead th {
   background-color: var(--color-acento);
-  color: white;
+  color: var(--bg);
   font-weight: 700;
   padding: 16px;
   text-align: center;
@@ -55,22 +55,22 @@ td {
 }
 
 tr:nth-child(even) td {
-  background-color: #f9f9f9;
+  background-color: var(--bg-darker);
 }
 
 tr:hover td {
-  background-color: #e6f5ec;
+  background-color: var(--highlight);
   transition: 0.3s;
 }
 
 .fila-link {
-  color: black;
+  color: var(--color-texto);
   text-decoration: none;
   font-weight: 600;
 }
 
 .fila-link:hover {
-  color: #2bb775;
+  color: var(--color1);
   text-decoration: underline;
   transition: 0.3s;
 }
